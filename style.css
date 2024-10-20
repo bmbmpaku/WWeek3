@@ -1,0 +1,57 @@
+.header.img{
+    width: 50px;
+}
+header{
+    display: inline-block;
+}
+nav{
+    display: inline-flexbox;
+    justify-items: auto;
+    background-color: bisque;
+    grid-column: span 4;
+    grid-row-start: 2;
+    grid-row-end: 5;
+
+}
+.maingamecontrols {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 45vh;
+    padding: 10px;
+}
+.T2gamecontrols{
+    display: flex;
+    flex-direction: column;
+    max-width: 45vh;
+    align-content: center;
+    padding: 10px;
+    
+}
+.toppinglist{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10%;
+    border-width: 3px;
+    padding: 10px;
+    border-color: #fca164;
+}
+.scorecard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5%;
+    border-width: 2px;
+    width: 70%;
+    background-image: url(./images/cookies.png);
+    container: 70%;
+    align-self: center;
+}
+p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}

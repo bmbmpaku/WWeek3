@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cookie Jar</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js" defer></script>
+</head>
+<body id="container">
+    <div class="grid-wrapper"><header>
+        <img src="./images/cookie.png" alt="cookie logo" style="width: 50px;"/>
+        <nav class="nav-bar">
+            <a href="#">Instructions</a>
+            <a href="#">Toppings Menu</a>
+            <a href="#">Preferences</a>
+        </nav>
+    </header>
+</div>
+    
+    <h1> The Cookie Jar </h1>
+    <div id="Instructions" class="box">
+    This game is simple:
+    <ul>
+        <li>
+            Once you hit the start button, you are rewarded with 1 Cookie per click.
+        </li>
+        <li>
+            Your objective is to collect as many cookies into your Cookie Jar without breaking the jar.
+        </li>
+        <li>
+            You can get more cookies every second by buying special toppings.
+        </li>
+        <li>
+            You can increase the size of your cookie jar by trading your toppings. 
+        </li>
+        <li>
+            Lastly have fun and dont break the jar, thats how you get ants!!!!!
+        </li>
+        
+    </ul>
+    
+
+</div> 
+<div class="scorecard">
+    <p>Cookies in the Jar: <span id="cookie-disp">0</span></p>
+    <p>Cookies per second: <span id="cps-disp">0</span></p>
+    <p>Your cookie Jar: <span id="cookiejar-disp">0</span></p>
+    <p>Super Toppings: <span id="toppings">0</span></p>
+
+</div>
+
+<div class="maingamecontrols">
+    <button id="startgame">Start Game</button>
+    <button id="getcookie-btn">Coooookiiiess</button>
+</div>
+<div class = "T2gamecontrols">
+    <div class= "toppinglist">
+        <h2>Buy Super Toppings to get more Cookie Rewards</h2>
+        <button id="gettoppings-btn">Chocolate Chip</button>
+        <button id="magic-flour">Magic Flour</button>
+        <button id="skittles">Skittles</button>
+        <button id="biscoff">Biscoff </button>
+    </div>
+
+    <button id="doublejar-btn">Get a bigger Jar</button>
+</div>
+<div class="preferences">
+    <button id="audio_toggle"> Audio On/Off</button>
+    <button id="dark_mode"> Dark Mode </button>
+</div>
+</body>
+</html>

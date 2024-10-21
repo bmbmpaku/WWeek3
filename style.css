@@ -46,12 +46,35 @@ nav{
     container: 70%;
     align-self: center;
 }
-p{
+h1,p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: black;
+    color: #222;
 }
 body{
     display: flex;
     flex-direction: column;
     padding: 10px;
+    background: #fff;
+    font: 100% system-ui;  
+}
+body.dark-theme {
+    background: #121212;
+    --text-color: #fff;
+}
+body.dark-theme h1,
+body.dark-theme h2,
+body.dark-theme ul,
+body.dark-theme p {
+color: #eee;
+--text-color: #eee;
+}
+body.dark-theme a {
+    color: #809fff;
+}
+body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+}
+body.light-theme h2{ 
+    --text-color: #fff;
 }

@@ -44,6 +44,8 @@ const gettoppingsBtn = document.getElementById("gettoppings-btn");
 const cookiejar = document.getElementById("cookiejar-disp");
 const startgame = document.getElementById("startgame");
 const toppingsdisplay = document.getElementById("toppings");
+const darkmodetog = document.getElementById("dark_mode");
+
 
 //Game Logic
 // Every second increase cookies by cps 
@@ -173,3 +175,14 @@ function handleLocalStorageChange(event) {
     }
   };
   window.addEventListener("storage", handleLocalStorageChange);
+
+  //Dark Mode
+  
+function darkmode(){ 
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+if (prefersDarkScheme.matches) {
+  document.body.classList.toggle("light-theme");
+} else {
+  document.body.classList.toggle("dark-theme");
+}}
+darkmodetog.addEventListener("click", darkmode);
